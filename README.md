@@ -5,6 +5,9 @@ Simple NFT aggregator build with Python, PostgreSQL and Solana API.
 
 - [Description](#Description)
 - [Usage](#Usage)
+- [Examples](#Examples)
+- [References](#References)
+- [License](#License)
 
 ##Description
 
@@ -37,10 +40,14 @@ headers = {
 ```
 
 ##Examples
-1. ![image1](https://github.com/KfcEnjoyer/Nft-Aggregator/blob/main/images/submit-box.png)
-2. ![image2](https://github.com/KfcEnjoyer/Nft-Aggregator/blob/main/images/result.png)
-3. ![image3](https://github.com/KfcEnjoyer/Nft-Aggregator/blob/main/images/database.png)
+![image1](https://github.com/KfcEnjoyer/Nft-Aggregator/blob/main/images/submit-box.png)
+Paste the NFT address
 
+![image2](https://github.com/KfcEnjoyer/Nft-Aggregator/blob/main/images/database.png)
+add to DB
+
+![image3](https://github.com/KfcEnjoyer/Nft-Aggregator/blob/main/images/result.png)
+get the result
 ##References
 - [psycopg2](https://pypi.org/project/psycopg2/)
 - [flask](https://flask.palletsprojects.com/en/2.2.x/) and Lecture 6 
