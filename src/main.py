@@ -28,10 +28,5 @@ def get_address():
         return render_template("index.html", mint=value[0][0], name=value[0][1], standard=value[0][2], solana=value[0][3])
 
 
-@app.route("/in")
-def index():
-    return render_template('index.html')
-
-
 if __name__ == "__main__":
     app.run(debug=True)
