@@ -17,8 +17,8 @@ and store it inside a database.
 ## Usage
 
 You simply enter a NFT address into submit box and get data about that
-NFT from a database if record exists. If not record gets created and then added
-to a database
+NFT from a database if record exists. If not record gets created and then returned
+to user
 
 ![expl1](https://github.com/KfcEnjoyer/Nft-Aggregator/blob/main/images/expl1.png)
 
