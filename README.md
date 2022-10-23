@@ -22,7 +22,7 @@ to user
 
 ![expl1](https://github.com/KfcEnjoyer/Nft-Aggregator/blob/main/images/expl1.png)
 
-![expl2](https://github.com/KfcEnjoyer/Nft-Aggregator/blob/main/images/expl2.png)
+![expl2](https://github.com/KfcEnjoyer/Nft-Aggregator/blob/main/images/exp2.png)
 
 #### Installation
 
