@@ -31,7 +31,7 @@ to user
 ``` ter
 git clone https://github.com/KfcEnjoyer/Nft-Aggregator.git
  ```
-3. Install pip packages 
+3. Install python packages 
 ```
 pip install flask psycopg2 requests
 ```
