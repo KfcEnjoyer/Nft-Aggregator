@@ -3,9 +3,9 @@ import psycopg2
 
 def connect():
     connection = psycopg2.connect(database='pyp',
-                            host='localhost',
-                            user='postgres',
-                            password='lolkek12')
+                                  host='localhost',
+                                  user='postgres',
+                                  password='lolkek12')
     return connection
 
 
@@ -23,7 +23,8 @@ def create_table():
     try:
         conn = connect()
         cur = conn.cursor()
-        cur.execute("CREATE TABLE IF NOT EXISTS nft (mint varchar(120) primary key, name varchar(80) not null, standard varchar(50), solBalance float(25))")
+        cur.execute(
+            "CREATE TABLE IF NOT EXISTS nft (mint varchar(120) primary key, name varchar(80) not null, standard varchar(50), solBalance float(25))")
         conn.commit()
     except EOFError as err:
         print("Error has occured", err)
@@ -32,18 +33,19 @@ def create_table():
         close_connection(conn)
 
 
-def insert_value(mint, name, standard, solBalance):
+def insert_value(mint, name, standard, sol_balance):
     try:
         conn = connect()
         cur = conn.cursor()
         cur.execute("INSERT INTO nft (mint, name, standard, solBalance) VALUES "
-                    f"('{mint}','{name}','{standard}', {solBalance})")
+                    f"('{mint}','{name}','{standard}', {sol_balance})")
         conn.commit()
     except EOFError as err:
         print("Error has occured", err)
     finally:
         close_cursor(cur)
         close_connection(conn)
+
 
 def check_if_exists(mint):
     try:
