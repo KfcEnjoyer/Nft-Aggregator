@@ -26,7 +26,7 @@ to user
 
 #### Installation
 
-1. Get a free Moralis Solana API key [here](https://moralis.io/?utm_source=gads&utm_campaign=17592653460&utm_medium=143799510688&network=g&device=c&gclid=CjwKCAjwzNOaBhAcEiwAD7Tb6OuqOkFkRey8hzsv3Ahz_WVNreZKFDurSUVYoJGjAq_jsZIIMwhDSxoCS3AQAvD_BwE)
+1. Get a free Moralis API key [here](https://moralis.io/?utm_source=gads&utm_campaign=17592653460&utm_medium=143799510688&network=g&device=c&gclid=CjwKCAjwzNOaBhAcEiwAD7Tb6OuqOkFkRey8hzsv3Ahz_WVNreZKFDurSUVYoJGjAq_jsZIIMwhDSxoCS3AQAvD_BwE)
 2. Clone the repo 
 ``` ter
 git clone https://github.com/KfcEnjoyer/Nft-Aggregator.git
