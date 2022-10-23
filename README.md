@@ -20,6 +20,10 @@ You simply enter a NFT address into submit box and get data about that
 NFT from a database if record exists. If not record gets created and then added
 to a database
 
+![expl1](https://github.com/KfcEnjoyer/Nft-Aggregator/tree/main/images/expl1.png)
+
+![expl2](https://github.com/KfcEnjoyer/Nft-Aggregator/tree/main/images/expl2.png)
+
 #### Installation
 
 1. Get a free Moralis Solana API key [here](https://moralis.io/?utm_source=gads&utm_campaign=17592653460&utm_medium=143799510688&network=g&device=c&gclid=CjwKCAjwzNOaBhAcEiwAD7Tb6OuqOkFkRey8hzsv3Ahz_WVNreZKFDurSUVYoJGjAq_jsZIIMwhDSxoCS3AQAvD_BwE)
