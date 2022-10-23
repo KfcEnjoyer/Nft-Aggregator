@@ -22,7 +22,7 @@ to a database
 
 ![expl1](https://github.com/KfcEnjoyer/Nft-Aggregator/blob/main/images/expl1.png)
 
-![expl2](https://github.com/KfcEnjoyer/Nft-Aggregator/tree/main/images/expl2.png)
+![expl2](https://github.com/KfcEnjoyer/Nft-Aggregator/blob/main/images/expl2.png)
 
 #### Installation
 
