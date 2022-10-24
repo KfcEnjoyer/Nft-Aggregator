@@ -42,6 +42,13 @@ headers = {
     "X-API-Key": "Your API key"
 }
 ```
+5. Configure your Database in database.py
+```python
+connection = psycopg2.connect(database='DBname',
+                                  host='your_host',
+                                  user='user_name',
+                                  password='DBpassword')
+```
 ___
 [Back to the top](#Nft-Aggregator)
 
