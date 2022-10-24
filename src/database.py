@@ -13,6 +13,7 @@ def close_connection(conn):
     if conn:
         conn.close()
 
+
 def close_cursor(cur):
     if cur:
         cur.close()
