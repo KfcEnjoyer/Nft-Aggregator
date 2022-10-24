@@ -2,10 +2,10 @@ import psycopg2
 
 
 def connect():
-    connection = psycopg2.connect(database='pyp',
+    connection = psycopg2.connect(database='DBname',
                                   host='localhost',
                                   user='postgres',
-                                  password='lolkek12')
+                                  password='DBpassword')
     return connection
 
 
@@ -24,7 +24,7 @@ def create_table():
         conn = connect()
         cur = conn.cursor()
         cur.execute(
-            "CREATE TABLE IF NOT EXISTS nft (mint varchar(120) primary key, name varchar(80) not null, standard varchar(50), solBalance float(25))")
+            "CREATE TABLE IF NOT EXISTS nft (mint varchar(120) primary key, nft json)")
         conn.commit()
     except EOFError as err:
         print("Error has occured", err)
@@ -33,12 +33,12 @@ def create_table():
         close_connection(conn)
 
 
-def insert_value(mint, name, standard, sol_balance):
+def insert_value(mint, nft):
     try:
         conn = connect()
         cur = conn.cursor()
-        cur.execute("INSERT INTO nft (mint, name, standard, solBalance) VALUES "
-                    f"('{mint}','{name}','{standard}', {sol_balance})")
+        cur.execute("INSERT INTO nft (mint, nft) VALUES "
+                    f"('{mint}','{nft}')")
         conn.commit()
     except EOFError as err:
         print("Error has occured", err)
@@ -65,7 +65,8 @@ def get_value(mint):
     try:
         conn = connect()
         cur = conn.cursor()
-        cur.execute(f"SELECT * FROM nft WHERE mint='{mint}'")
+        cur.execute(f"SELECT mint, nft->>'name', nft->>'standard', nft->'metaplex'->'owners'"
+                    f" FROM nft WHERE mint='{mint}'")
         conn.commit()
         return cur.fetchall()
     except EOFError as err:
