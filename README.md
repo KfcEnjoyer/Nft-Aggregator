@@ -44,10 +44,10 @@ headers = {
 ```
 5. Configure your Database in database.py
 ```python
-connection = psycopg2.connect(database='DBname',
+connection = psycopg2.connect(database='your_db_name',
                                   host='your_host',
-                                  user='user_name',
-                                  password='DBpassword')
+                                  user='your_username',
+                                  password='your_password')
 ```
 ___
 [Back to the top](#Nft-Aggregator)
